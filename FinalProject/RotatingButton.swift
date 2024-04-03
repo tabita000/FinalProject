@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import UIKit
+
+class RotatingButton: UIButton {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageView?.transform = transform
+    }
+}
